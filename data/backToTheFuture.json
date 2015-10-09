@@ -1,0 +1,10 @@
+[{ "movieTitle": "Back To The Future",
+	"releaseDate": "1985",
+	"tomatoScore": "96"	},
+	{ "movieTitle": "Back To The Future, Part II",
+	"releaseDate": "1989",
+	"tomatoScore": "64"	},
+	{ "movieTitle": "Back To The Future, Part III",
+	"releaseDate": "1990",
+	"tomatoScore": "73"	}
+	]

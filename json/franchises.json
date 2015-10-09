@@ -1,0 +1,57 @@
+{"terminator":{
+	"name": "Terminator",
+	"startYear": "1984",
+	"endYear": "2015",
+	"movies": [
+		{
+		"movieName": "The Terminator",
+		"yearReleased": "1984",
+		"tomatoScore": "100"
+		},
+		{
+		"movieName": "Terminator 2-Judgement day",
+		"yearReleased": "1991",
+		"tomatoScore": "92"
+		},
+		{
+		"movieName": "Terminator 3-Rise of the Machines",
+		"yearReleased": "2003",
+		"tomatoScore": "70"	
+		},
+		{
+		"movieName": "Terminator Salvation",
+		"yearReleased": "2009",
+		"tomatoScore": "33"
+		},
+		{
+		"movieName": "Terminator GenSys",
+		"yearReleased": "2015",
+		"tomatoScore": "62"
+		}
+	}},
+
+{
+"franchise": "backToTheFuture",
+"name": "Back To The Future",
+"startYear": "1985",
+"endYear": "1990",
+"movies": [
+	{
+	"movieName": "Back To The Future",
+	"yearReleased": "1985",
+	"tomatoScore": "96"
+	},
+	{
+	"movieName": "Back To The Future, Part II",
+	"yearReleased": "1989",
+	"tomatoScore": "64"
+	},
+	{
+	"movieName": "Back To The Future, Part III",
+	"yearReleased": "1990",
+	"tomatoScore": "73"
+	}
+	]
+}
+
+];

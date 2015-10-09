@@ -1,0 +1,16 @@
+[{ "movieTitle": "The Terminator",
+	"releaseDate": "1984",
+	"tomatoScore": "100" },
+	{ "movieTitle": "Terminator 2-Judgement day",
+	"releaseDate": "1991",
+	"tomatoScore": "92"	},
+	{ "movieTitle": "Terminator 3-Rise of the Machines",
+	"releaseDate": "2003",
+	"tomatoScore": "70"	},
+	{ "movieTitle": "Terminator Salvation",
+	"releaseDate": "2009",
+	"tomatoScore": "33"	},
+	{ "movieTitle": "Terminator GenSys",
+	"releaseDate": "2015",
+	"tomatoScore": "0"	}
+	]

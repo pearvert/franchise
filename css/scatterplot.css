@@ -1,0 +1,148 @@
+#wrapper {
+  width: 750px;
+  position: relative;
+}
+.roundel {
+    position: absolute;
+    left: 235px;
+    top: 220px;
+    display: none;
+}
+.roundel.is-shown {
+  display: block;
+}
+h2 {
+  margin-bottom: 0px;
+}
+.subTitle {
+  font-size: 1em;
+  font-weight: bold;
+  color: maroon;
+  margin: 0px;
+}
+#instructionBox {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  width: 598px;
+  }
+.instruction {
+  font-family: helvetica, sans-serif;
+  font-size: .75em;
+  color: #999;
+  margin: 0px;
+}
+.instruction span {
+  font-weight: bold;
+}
+.dotDetail {
+  display: inline-block;
+  background-color: #333;
+  width: 710px;
+  height: 42px;
+  padding: 2px;
+  text-align: left;
+  font: 12px sans-serif;
+  pointer-events: none;
+  overflow: hidden;
+}
+.ring {
+  stroke: none;
+  stroke-width: 0;
+  fill: #eed;
+}
+.death {
+  fill: #000;
+  stroke: none;
+  stroke-width: 0;
+}
+.endcap {
+  stroke: black;
+  stroke-width:0;
+  fill: #666;
+}
+.buttons {
+  background: #eee;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  width: 100px;
+}
+.buttons:focus {
+  background: #aaa;  
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  width: 100px;
+}
+.buttons:hover {
+  background: #ccc;
+  color: #900;
+}
+.pressed {
+  color: white;
+  background: #666;
+}
+.legendBox {
+  background: #f00;
+  stroke: black;
+  stroke-width: 1px;
+}
+.legendText {
+  color: black;
+  stroke-width: 0;
+  font: 9px sans-serif;
+}
+.legendDot {
+  stroke-width: 0;
+}
+.source {
+  font-family: helvetica, sans-serif;
+  font-size: .75em;
+  color: #999;
+}
+.source span {
+  font-weight: bold;
+}
+div.episodeTitle {
+  position: absolute;
+  text-align: center;
+  wwidth: 100px;
+  height: 15px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+div#chart {
+  position: relative;
+  float: left;
+  border: 0px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+#blackMatte {
+  background-color: black;
+  wwidth: 600px;
+  hheight: 625px;
+}
+.axis {
+  font: 9px sans-serif;
+  ;
+}
+.axis line, .axis path {
+  shape-rendering: crispEdges;
+  stroke: black;
+  fill: none;
+}
+.movie_title {
+  font-size: .6em; 
+  font-family: sans-serif;  
+}
+
+
