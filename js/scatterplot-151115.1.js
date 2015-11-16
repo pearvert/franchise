@@ -28,39 +28,34 @@ var selected_options = [];
 
 // set margins for chart area
 var margin = {top: 20, right: 100, bottom: 20, left: 60},
-	width = 800 - margin.left - margin.right,
-	height = 500 - margin.top - margin.bottom;
+	width = 600 - margin.left - margin.right,
+	height = 300 - margin.top - margin.bottom;
 
 // create style for x axis in year format
 var yearFormat = d3.time.format("%Y");
 
-//
 // set up x and y scaling
-//
-var x_scale = d3.scale.linear()
+var x = d3.scale.linear()
 	.domain([d3.min(franchise_name, function (d) {
 		return d.release_date - 1}), d3.max(franchise_name, function (d) {
 			return d.release_date }) ])
 	.range([0, width ]);
 
-var y_scale = d3.scale.linear()
+var y = d3.scale.linear()
 	.domain([0, 100 ])
 	.range([ height, 0 ]);
 
-//
-// draw the x and y axis
-//
+// draw the x axis
 var xAxis = d3.svg.axis()
-	.scale(x_scale)
+	.scale(x)
 	.orient('bottom');
 
+// draw the y axis
 var yAxis = d3.svg.axis()
-	.scale(y_scale)
+	.scale(y)
 	.orient('left');
 
-//
 // find the div#chart. this is where the all material for the scatterplot will got
-//
 var chart = d3.select('#chart')
 	.append('svg:svg')
 	.attr('class', 'chart')
@@ -101,15 +96,8 @@ main.append('g')
 	.attr('class', 'axis')
 	.call(yAxis);
 
-function draw_the_dots(current_franchise) {
-	console.log(current_franchise)
-	movie_dots.selectAll("circle")
-		.data(current_franchise)
-		.enter()
-		.append("circle")
-		.attr("cx", function (d) {return x_scale(d.year);})
-		.attr("cy", function (d) {return y_scale(d.imdb);})
-		.attr("r", 5);
+function draw_the_dots() {
+
 };
 
 var identity = function (d) { return d;};
@@ -133,9 +121,8 @@ d3.select("#franchise_selector")
 		.map(function(key){
 			return select_element.options[key].value
 		});
-		draw_the_dots(selected_options);
+		draw_the_dots();
 	});
-
 
 
 
